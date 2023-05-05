@@ -14,23 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboards.pmi');
 });
 
-//menampilkan langsung hasil perhitunga
-Route::get('/hitung', function() {
-    return 9*9;
-});
+// //menampilkan langsung hasil perhitunga
+// Route::get('/hitung', function() {
+//     return 9*9;
+// });
 
-//menampilkan langsung string
-Route::get('/string', function() {
-    return "apa saja";
-});
+// //menampilkan langsung string
+// Route::get('/string', function() {
+//     return "apa saja";
+// });
 
-//Penulisan Route Basic Multi Argument
-Route::get('/kontak', function() {
-    return view('kontak',['name'=>'Ahmad Ali Hasan','phone'=>'08770032.....']);
-});
+// //Penulisan Route Basic Multi Argument
+// Route::get('/kontak', function() {
+//     return view('kontak',['name'=>'Ahmad Ali Hasan','phone'=>'08770032.....']);
+// });
 
 //Penulisan Route Basic Multi Parameter
 // Route::get('/kontak', function() {
